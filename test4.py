@@ -6,9 +6,9 @@
 import re
 
 def chunkify(string, chunk_length, fill='x'):
-    assert len(string) > 0, "variable string must be at least one character"
-    assert chunk_length > 0, "variable chunk_length must be at least 1"
-    assert len(fill) == 1, "variable fill must be one character"
+    assert len(string) > 0, "var string must be at least one character"
+    assert chunk_length > 0, "var chunk_length must be at least 1"
+    assert len(fill) == 1, "var fill must be one character"
     pad = chunk_length - (len(string) % chunk_length)
     string = string + "".join((fill,) * pad)
     sre = re.compile(rf'(.{{{chunk_length}}})')
