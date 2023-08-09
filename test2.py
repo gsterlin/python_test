@@ -1,3 +1,8 @@
+# This script is the first real attempt at solving the chunkify problem
+#
+# NOTE: partial solution from https://stackoverflow.com/questions/13673060/split-string-into-strings-by-length
+#       and built upon to meet the understanding I have of the specifications for chunkify
+#
 # let's get some regular expressions for this
 import re
 
